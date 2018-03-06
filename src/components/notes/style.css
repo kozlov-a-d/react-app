@@ -1,0 +1,64 @@
+.note-editor__form.is-visible {
+  display: block; }
+
+.note-editor__form.is-hidden {
+  display: none; }
+
+.form__item {
+  margin: 0 auto 20px; }
+
+.form__btn {
+  margin: 0 auto 20px; }
+
+.form-group .form-group-default, .form-group .form-group__input, .form-group .form-group__text {
+  display: block;
+  width: 100%;
+  padding-left: 15px;
+  padding-right: 15px;
+  font-size: 15px;
+  color: #2f434d;
+  background: #fff;
+  border: 1px solid #c6cfd4;
+  border-radius: 5px;
+  transition: 0.3s; }
+  .form-group .form-group-default:focus, .form-group .form-group__input:focus, .form-group .form-group__text:focus {
+    box-shadow: 0 0 4px 0 rgba(119, 171, 196, 0.4);
+    border-color: #7bafc9; }
+
+.form-group__input {
+  height: 40px; }
+
+.form-group__text {
+  height: 140px;
+  padding-top: 10px;
+  padding-bottom: 10px; }
+
+.form-group__error {
+  margin: 10px 0 10px;
+  font-size: 14px;
+  line-height: 20px;
+  color: #f00; }
+
+.btn {
+  display: block;
+  width: 280px;
+  height: 45px;
+  max-width: 100%;
+  margin: 0 auto 20px;
+  border: none;
+  background: #3990ab;
+  font-size: 15px;
+  color: #fff;
+  cursor: pointer;
+  border-radius: 3px;
+  text-decoration: none;
+  text-align: center;
+  line-height: 45px;
+  transition: 0.3s; }
+  .btn:hover {
+    background: #40545d; }
+  .btn.-fullwidth {
+    width: 100%; }
+  .btn.-inline {
+    width: auto;
+    padding: 0 20px; }

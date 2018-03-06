@@ -1,0 +1,40 @@
+.l-wrapper {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  position: relative;
+  min-height: 100vh;
+  background: #fff; }
+
+.l-header {
+  background-color: #20232a;
+  color: #ffffff;
+  position: fixed;
+  z-index: 1;
+  width: 100%;
+  top: 0;
+  left: 0; }
+
+.l-main {
+  padding: 90px 0 40px; }
+
+.l-footer {
+  margin-top: auto;
+  background-color: #20232a;
+  color: #ffffff; }
+
+.l-container {
+  width: 100%;
+  max-width: 1170px;
+  margin: 0 auto; }
+  @media (max-width: 1230px) {
+    .l-container {
+      width: auto;
+      margin: 0 30px; } }
+  @media (max-width: 960px) {
+    .l-container {
+      margin: 0 20px; } }
+
+.header__title {
+  text-align: center;
+  font-weight: 400; }

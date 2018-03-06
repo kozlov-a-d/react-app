@@ -1,0 +1,94 @@
+.note-editor{
+
+    &__form{
+        &.is-visible{
+            display: block;
+        }
+        &.is-hidden{
+            display: none;
+        }
+    }
+
+}
+
+.form{
+
+    &__item{
+        margin: 0 auto 20px;
+    }
+
+    &__btn{
+        margin: 0 auto 20px;
+    }
+
+}
+
+.form-group{
+
+    .form-group-default{
+        display: block;
+        width: 100%;
+        padding-left: 15px;
+        padding-right: 15px;
+        font-size: 15px;
+        color: #2f434d;
+        background: #fff;
+        border: 1px solid #c6cfd4;
+        border-radius: 5px;
+        transition: 0.3s;
+        &:focus {
+            box-shadow: 0 0 4px 0 rgba(119, 171, 196, 0.4);
+            border-color: rgb(123, 175, 201);
+        }
+    }
+
+    &__input{
+        @extend .form-group-default;
+        height: 40px;
+    }
+    &__text{
+        @extend .form-group-default; 
+        height: 140px;
+        padding-top: 10px;
+        padding-bottom: 10px;
+    }
+
+    &__error{
+        margin: 10px 0 10px;
+        font-size: 14px;
+        line-height: 20px;
+        color: #f00;
+    }
+}
+
+.btn{
+    display: block;
+    width: 280px;
+    height: 45px;
+    max-width: 100%;
+    margin: 0 auto 20px;
+  
+    border: none;
+    background: #3990ab;
+    font-size: 15px;
+    color: #fff;
+    cursor: pointer;
+    border-radius: 3px;
+    text-decoration: none;
+    text-align: center;
+    line-height:  45px;
+    transition: 0.3s;
+  
+    &:hover{
+        background: #40545d;
+      }
+  
+    &.-fullwidth{
+      width: 100%;
+    }
+    &.-inline{
+      width: auto;
+      padding: 0 20px;
+    }
+  
+}
