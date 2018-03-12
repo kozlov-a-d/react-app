@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
-import { connect } from 'react-redux'
-
+import { connect } from 'react-redux';
+import { Link } from 'react-router-dom';
 import './style.css';
 
 import { asyncGetNotes } from '../actions/notes';
@@ -37,6 +37,13 @@ class App extends Component {
                     <div className="l-container">
                         {/* <img src={logo} className="App-logo" alt="logo" /> */}
                         <h1 className="header__title">Welcome to React</h1>
+                        Links:
+                        {' '}
+                        <Link to="/">Home</Link>
+                        {' '}
+                        <Link to="/edit">edit</Link>
+                        {' '}
+                        <Link to="/about">about</Link>
                     </div>
                 </header>
                 {/* end .l-header */}
