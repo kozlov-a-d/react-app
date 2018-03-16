@@ -16,7 +16,7 @@
   left: 0; }
 
 .l-main {
-  padding: 100px 0 40px; }
+  padding: 160px 0 40px; }
 
 .l-footer {
   margin-top: auto;
@@ -38,3 +38,25 @@
 .header__title {
   text-align: center;
   font-weight: 400; }
+
+.menu-main {
+  margin: 0.4em 0 0;
+  border-top: 1px solid #fff; }
+  .menu-main ul {
+    display: flex;
+    justify-content: space-between;
+    margin: 0;
+    padding: 0;
+    list-style: none; }
+  .menu-main li {
+    display: block; }
+  .menu-main a {
+    display: block;
+    text-align: center;
+    color: #fff;
+    font-size: 18px;
+    line-height: 50px;
+    text-decoration: none;
+    transition: opacity 0.3s; }
+    .menu-main a:hover {
+      opacity: 0.8; }

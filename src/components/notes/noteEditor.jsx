@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import { connect } from 'react-redux';
 import './style.css';
 
 class NoteEditor extends Component {
@@ -80,12 +81,14 @@ class NoteEditor extends Component {
                 title: this.state.title.value,
                 description: this.state.description.value
             };
-    
-            this.props.onSubmit(newNote);
+
+            // dispatch onAddNote
+            this.props.onAddNote(newNote);
             this.resetData();
         }
         
     };
+
 
     render() {
 
@@ -126,4 +129,11 @@ class NoteEditor extends Component {
     }
 }
 
-export default NoteEditor;
+export default connect(
+    state => ({ }),
+    dispatch => ({
+        onAddNote: (note) => {
+            dispatch({ type: 'ADD_NOTE', payload: note })
+        }
+    })
+)(NoteEditor);
